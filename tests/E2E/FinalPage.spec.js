@@ -30,13 +30,7 @@ test.describe("cart page validation", () => {
 
     await loginPage.goto(BASEURL);
     await loginPage.login(USERNAME, PASSWORD);
-<<<<<<< Updated upstream
-    await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html/EngineerB");
-=======
-
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
-
->>>>>>> Stashed changes
 
     await productPage.addSpecificProductsToCart(productsToCart);
     await productPage.clickOnCartLink();
