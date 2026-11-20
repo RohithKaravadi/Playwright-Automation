@@ -28,7 +28,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: run smoke tests
-      run: npm playwright test tests/SmokeTests
+      run: npx playwright test tests/SmokeTests
 
     # - name: Run Playwright tests
     #   run: npx playwright test
