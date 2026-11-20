@@ -61,14 +61,4 @@ test.describe("cart page validation", () => {
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
 
  })
-
-  test("Validate Back Home Button 1", async ({page})=>{
-
-    await finalPage.clickBackHomeButton();
-    await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
-
- })
-
-
- 
 })
