@@ -30,8 +30,7 @@ test.describe("cart page validation", () => {
 
     await loginPage.goto(BASEURL);
     await loginPage.login(USERNAME, PASSWORD);
-
-    await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html/Engineer");
+    await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
 
 
     await productPage.addSpecificProductsToCart(productsToCart);
