@@ -53,7 +53,6 @@ test("Validate Cancel Button", async ({ page }) => {
 
 test("Validate Continue Button", async ({ page }) => {
     await cartPage.clickCheckoutButton();
-    const CheckOutData = await checkOutPage.getCheckOutElements();
     await checkOutPage.filledCheckOutDetails(CheckOutData.firstName, CheckOutData.lastName, CheckOutData.postalCode);
     await checkOutPage.clickContinue();
     await expect(page).toHaveURL("https://www.saucedemo.com/checkout-step-two.html");

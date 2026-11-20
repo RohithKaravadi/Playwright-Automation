@@ -21,9 +21,9 @@ async getCheckOutElements(){
     async filledCheckOutDetails(firstName, lastName, postalCode) {
         const checkOutData = await this.getCheckOutElements();
      
-        await this.page.fill(checkOutPageLocators.firstName, firstName);
-        await this.page.fill(checkOutPageLocators.lastName, lastName);
-        await this.page.fill(checkOutPageLocators.postalCode, postalCode);
+        await checkOutData.firstName.fill(firstName);
+        await checkOutData.lastName.fill(lastName);
+        await checkOutData.postalCode.fill(postalCode);
 
     }
 

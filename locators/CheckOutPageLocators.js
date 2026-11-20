@@ -8,3 +8,4 @@ export const checkOutPageLocators = {
   postalCode: "#postal-code",  
   errorMessage: ".error-message-container.error"
 }
+
