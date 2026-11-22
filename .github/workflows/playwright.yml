@@ -25,10 +25,10 @@ jobs:
   
 
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+      run: npx playwright install --with-deps chrome
 
     - name: run smoke tests
-      run: npx playwright test tests/SmokeTests --project=Google chrome
+      run: npx playwright test tests/SmokeTests --project="Google Chrome"
 
     # - name: Run Playwright tests
     #   run: npx playwright test
