@@ -1,0 +1,17 @@
+export const ProductPageLocators = {
+  settingIcon: "#react-burger-menu-btn",
+  logoutButton: "#logout_sidebar_link",
+  aboutLink: "#about_sidebar_link",
+  requestDemoButton: "button:has-text('Book a Demo')",
+  tryItFreeButton: "button:has-text('Try it free')",
+  productNames: ".inventory_item_name",
+  productDescriptions: ".inventory_item_desc",
+  productPrices: ".inventory_item_price",
+  addToCartButton: '[data-test^="add-to-cart-"]',
+  filterDropdown: ".product_sort_container",
+  filterNameAtoZ: "option[value='az']",
+  filterNameZtoA: "option[value='za']",
+  filterPriceLowToHigh: "option[value='lohi']",
+  filterPriceHighToLow: "option[value='hiol']",
+  cartLink: ".shopping_cart_link",
+};
