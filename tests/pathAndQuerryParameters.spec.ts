@@ -45,7 +45,7 @@ test('Multiple Query Parameters using URL', async ({ request }) => {
     console.log(responseBody);
     expect(responseBody.products.length).toBe(5);
 });
-test.only('Multiple Query Parameters using params', async ({ request }) => {
+test('Multiple Query Parameters using params', async ({ request }) => {
     const response = await request.get(
         'https://dummyjson.com/products',
         {

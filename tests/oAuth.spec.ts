@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('Generate OAuth Access Token', async ({ request }) => {
+test('Generate OAuth Access Token', async ({ request }) => {
 
     const tokenResponse  = await request.post(
         'https://github.com/login/oauth/access_token',
