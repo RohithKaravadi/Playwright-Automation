@@ -35,7 +35,21 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {name: 'API Tests'},
+    // {name: 'API Tests'},
+    {
+      name: 'default',
+    
+    },
+
+    {
+      name: 'iPad Mini',
+      use: { ...devices['iPad Mini']},
+    },
+
+    // {
+    //   name: 'Galaxy Z Fold 6 landscape',
+    //   use: { ...devices['Galaxy Z Fold 6 landscape']},
+    // },
     // {
     //   name: 'chromium',
     //   use: { ...devices['Desktop Chrome'] },
