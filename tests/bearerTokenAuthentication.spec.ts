@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('Beaer Token Authentication API', async({request})=>{
+test('Beaer Token Authentication API', async({request})=>{
     const response = await request.post(
         'https://dummyjson.com/auth/login',
          { 

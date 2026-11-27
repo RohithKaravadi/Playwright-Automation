@@ -1,4 +1,3 @@
-
 import Ajv from 'ajv';
 import { test, expect } from '@playwright/test';
 

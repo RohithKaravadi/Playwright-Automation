@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('Request Chaining Example', async ({ request }) => {
+test('Request Chaining Example', async ({ request }) => {
 
   const createBooking = await request.post(
         'https://restful-booker.herokuapp.com/booking',

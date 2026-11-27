@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('Basic Authentication API', async({request})=>{
+test('Basic Authentication API', async({request})=>{
     const response = await request.get(
         'https://httpbin.org/basic-auth/user/passwd',
         {  
